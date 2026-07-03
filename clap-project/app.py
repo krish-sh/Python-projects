@@ -5,7 +5,7 @@ import subprocess
 
 THRESHOLD = 10000
 MIN_DELAY = 0.2
-MAX_DELAY = 1.0
+MAX_DELAY = 0.5
 CHUNK = 1024
 DTYPE = 'int16'
 CHANNEL = 1

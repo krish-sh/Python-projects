@@ -12,6 +12,22 @@ CHANNEL = 1
 RATE  = 44100
 
 chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+vscode_path = r"C:\Users\win 10\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+
+def open_chrome(url):
+    subprocess.Popen([
+        chrome_path,
+        url
+    ])
+
+def open_youtube():
+    open_chrome("https://www.youtube.com")
+
+def open_vscode(vccode_path):
+    subprocess.Popen([
+        vscode_path
+    ])
+
 
 stream = sd.InputStream(
     samplerate = RATE,
